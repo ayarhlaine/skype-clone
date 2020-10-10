@@ -1,0 +1,30 @@
+@import 'styles/colors';
+@import 'styles/fonts';
+.tabs {
+    display: flex;
+    flex: 1;
+    padding: 0.5rem;
+    .tabs__container{
+        display: flex;
+        flex: 1;
+        .tabs__tab {
+            flex: 1;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+            cursor: pointer;
+            span {
+                font-size: 10px;
+                font-family: $font-family;
+            }
+            .MuiSvgIcon-root:hover{
+                color: $skype-black-color;
+            }
+        }
+        .tabs__tab--active{
+            color: $skype-blue-color;
+        }
+    }
+}
