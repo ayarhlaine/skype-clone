@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Profile from './Profile/Profile';
 import './SideBar.scss';
 const SideBar = () => {
     return (
         <div className='sidebar'>
-            Sidebar
+            <Profile />
+            {/* Search */}
+            {/* Tabs */}
+            {/* Header Buttons */}
+            {/* Tab Content */}
         </div>
     )
 }

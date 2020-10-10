@@ -1,0 +1,27 @@
+@import 'styles/colors';
+@import 'styles/fonts';
+.profile {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    .profile__detail{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        padding: 0 0.3rem;
+        .profile__name{
+            font-size: 16px;
+            color: $skype-black-color;
+            font-family: $font-family;
+        }
+        .profile__occupation{
+            font-size: 14px;
+            color: gray;
+            font-family: $font-family;
+        }
+    }
+    .MuiSvgIcon-root{
+        font-size: 30px;
+    }
+}
