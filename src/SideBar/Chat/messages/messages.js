@@ -2,7 +2,7 @@ export const chatMessages = [
     {
         active: true,
         imageUrl: 'https://scontent.frgn7-2.fna.fbcdn.net/v/t1.0-9/93880125_1087094841655328_3172679190365339648_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_eui2=AeEFffZF4f6TlQYnOJzBWDmg7ewotmYZ3nXt7Ci2Zhneda5JNAUfyg6KwZXSFGjefdLbC6HRDjRgNBwHRjal0XCY&_nc_ohc=UafJ_4rmhWgAX98pVB8&_nc_ht=scontent.frgn7-2.fna&oh=81fb0e4c41af9847ed2a45cce2bf5d5a&oe=5FA8D74C',
-        name: 'Ei Thandar Hlaine',
+        name: 'Ei Thandar Hlaine (ချစ်ချစ်)',
         lastMessage: "I love you so much ♥️",
         lastActiveTime: '10/2/2020',
     },
