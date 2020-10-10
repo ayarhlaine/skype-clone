@@ -1,0 +1,22 @@
+@import 'styles/fonts';
+.chat{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    .chat__title{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        font-size: 14px;
+        font-family: $font-family;
+        color: $skype-font-gray-color;
+    }
+    .chat__list{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
+    }
+}

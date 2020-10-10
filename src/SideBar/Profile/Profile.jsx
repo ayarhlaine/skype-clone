@@ -9,7 +9,7 @@ const Profile = () => {
             <Avatar className='profile__avatar'/>
             <div className="profile__detail">
                 <h2 className="profile__name">Ayar Hlaine</h2>
-                <p className="profile__occupation">Junior Web Developer</p>
+                <p className="profile__occupation">Web Developer</p>
             </div>
             <IconButton>
                 <MoreHorizIcon/>
