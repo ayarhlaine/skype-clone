@@ -1,10 +1,15 @@
 import React from 'react';
-import './App.css';
+import SideBar from './SideBar/SideBar';
+import Message from './Message/Message';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Skype Clone App</h1>
+    <div className="app">
+      <div className="app__body">
+        <SideBar />
+        <Message />
+      </div>
     </div>
   );
 }
