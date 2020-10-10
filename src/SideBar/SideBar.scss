@@ -6,4 +6,9 @@
     h3 {
         font-family: $font-family;
     }
+    .sidebar__divider{
+        border: none;
+        height: 1px;
+        background-color: lightgray;
+    }
 }
