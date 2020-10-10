@@ -18,4 +18,22 @@ export const chatMessages = [
         lastMessage: "Nice to meet you!",
         lastActiveTime: '10/2/2020',
     },
+    {
+        imageUrl: 'https://gamerhub-uploads.s3.us-west-1.amazonaws.com/mobile-legends/akai.jpg',
+        name: 'Akai',
+        lastMessage: "Nice to meet you!",
+        lastActiveTime: '10/2/2020',
+    },
+    {
+        imageUrl: 'https://gamerhub-uploads.s3.us-west-1.amazonaws.com/mobile-legends/angela.jpg',
+        name: 'Angela',
+        lastMessage: "Nice to meet you!",
+        lastActiveTime: '10/2/2020',
+    },
+    {
+        imageUrl: 'https://gamerhub-uploads.s3.us-west-1.amazonaws.com/0376e7907489419993f42827fb3ff03d.png',
+        name: 'Carmilla',
+        lastMessage: "Nice to meet you!",
+        lastActiveTime: '10/2/2020',
+    },
 ];

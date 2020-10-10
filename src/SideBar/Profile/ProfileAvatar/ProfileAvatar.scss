@@ -1,0 +1,15 @@
+@import 'styles/colors';
+.profileAvatar {
+    position: relative;
+    .profileAvatar__icon{
+        bottom: 0;
+        right: 0;
+        font-size: 15px !important;
+        z-index: 2;
+        position: absolute;
+        color: transparent;
+    }
+    .profileAvatar__icon--active{
+        color: $skype-active-green;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar } from '@material-ui/core';
+import ProfileAvatar from '../../Profile/ProfileAvatar/ProfileAvatar';
 import './ChatUser.scss';
 const ChatUser = ({
     imageUrl, name, lastMessage, lastActiveTime, active
@@ -7,7 +7,10 @@ const ChatUser = ({
     const className = active ? 'chatUser--active' : '';
     return (
         <div className={`chatUser ${className}`}>
-            <Avatar src={imageUrl}/>
+            <ProfileAvatar
+            active={active}
+            imageUrl={imageUrl}
+            />
             <div className="chatUser__info">
                 <h3 className="chatUser__info__name">
                     {name}
