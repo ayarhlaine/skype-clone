@@ -1,0 +1,56 @@
+@import 'styles/colors';
+@import 'styles/fonts';
+.messageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    .messageHeader__left{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        .messageHeader__left__title{
+            font-family: $font-family;
+            color: $skype-black-color;
+            cursor: pointer;
+        }
+        .messageHeader__left__content{
+            display: flex;
+            align-items: center;
+            .messageHeader__left__content__container{
+                display: flex;
+                align-items: center;
+                padding: 0.3rem;
+                color: $skype-font-gray-color;
+                span{
+                    font-family: $font-family;
+                    font-weight: 200;
+                    font-size: 12px;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+                .MuiSvgIcon-root{
+                    font-size: 12px;
+                }
+            }
+            .messageHeader__left__content__active__status{
+                color: $skype-active-green;
+            }
+        }
+    }
+    .messageHeader__right{
+        .messageHeader__right__button{
+            background-color: $skype-background-gray;
+            &:nth-child(1), &:nth-child(2) {
+                margin-right: 5px;
+            }
+        }
+        .MuiSvgIcon-root{
+            color: $skype-icon-color;
+        }
+    }
+}
+.vl{
+    border-left: 3px solid $skype-font-gray-color;;
+    height: 13px;
+}

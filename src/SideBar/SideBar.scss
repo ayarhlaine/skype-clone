@@ -1,5 +1,6 @@
 @import 'styles/colors';
 @import 'styles/fonts';
+@import 'styles/shared';
 .sidebar{
     flex: 1;
     background-color: $skype-background-gray;
@@ -7,8 +8,6 @@
         font-family: $font-family;
     }
     .sidebar__divider{
-        border: none;
-        height: 1px;
-        background-color: lightgray;
+        @extend %divider;
     }
 }

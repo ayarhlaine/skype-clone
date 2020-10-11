@@ -1,4 +1,7 @@
-.message{
-    // background: blue;
+@import 'styles/shared';
+.message {
     flex: 3;
+}
+.message__divider{
+    @extend %divider;
 }
