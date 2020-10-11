@@ -1,0 +1,23 @@
+@import 'styles/colors';
+@import 'styles/fonts';
+.userMessageMe {
+    display: flex;
+    justify-content: flex-end;
+    .userMessageMe__detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .userMessageMe__detail__time{
+            text-align: right;
+            font-size: 12px;
+            color: $skype-font-gray-color;
+        }
+        .userMessageMe__detail__info{
+            font-family: $font-family;
+            margin-top: 4px;
+            padding: 0.7rem 0.5rem;
+            background-color: $skype-active-blue;
+            border-radius: 20px 20px 0px 20px;
+        }
+    }
+}

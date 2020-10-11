@@ -1,5 +1,6 @@
 import React from 'react';
 import MessageHeader from './MessageHeader/MessageHeader';
+import MessageList from './MessageList/MessageList';
 import MessageInput from './MessageInput/MessageInput';
 import './Message.scss';
 const Message = () => {
@@ -7,7 +8,7 @@ const Message = () => {
         <div className='message'>
             <MessageHeader />
             <hr className='message__divider'/>
-            {/* MessageList */}
+            <MessageList />
             <MessageInput />
         </div>
     )
