@@ -1,0 +1,52 @@
+@import 'styles/colors';
+@import 'styles/fonts';
+.messageInput{
+    position: fixed;
+    align-self: flex-start;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    background-color: white;
+    .messageInput__input{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        padding: 1rem;
+        .messageInput__input__container{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            border: 0.5px solid lightgray;
+            background-color: $skype-background-gray;
+            padding: 1rem;
+            border-radius: 30px;
+            input {
+                font-family: $font-family;
+                border: none;
+                outline-width: 0;
+                background-color: $skype-background-gray;
+                width: 100%;
+            }
+            .MuiSvgIcon-root {
+                margin-right: 10px;
+                font-size: 18px;
+                color: $skype-icon-color;
+            }
+        }
+    }
+    .messageInput__buttons{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        .messageInput__buttons__button{
+            margin-right: 5px;
+            .MuiSvgIcon-root{
+                font-size: 18px;
+                color: $skype-icon-color;
+            }
+            justify-content: space-between;
+            background-color: $skype-background-gray;
+        }
+    }
+}

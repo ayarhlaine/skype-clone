@@ -12,12 +12,12 @@ const MessageHeader = () => {
         <div className="messageHeader">
             <div className="messageHeader__left">
                 <h3 className="messageHeader__left__title">
-                    Soe Arkar Htet
+                    Ei Thandar Hlaine
                 </h3>
                 <div className="messageHeader__left__content">
                     <div className="messageHeader__left__content__container">
                         <FiberManualRecordIcon className="messageHeader__left__content__active__status"/>
-                        <span>Web Developer</span>
+                        <span>Beauty Blogger</span>
                     </div>
                     <div class="vl"/>
                     <div className="messageHeader__left__content__container">
