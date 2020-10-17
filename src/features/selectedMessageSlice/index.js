@@ -1,7 +1,4 @@
-import { createSlice, createAction } from '@reduxjs/toolkit';
-
-// // Actions
-// const setSelectedMessageAction = createAction('message/setSelectedMessage');
+import { createSlice } from '@reduxjs/toolkit';
 
 // initial state
 const initialState = { selectedMessage: null };
