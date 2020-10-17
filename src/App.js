@@ -3,7 +3,7 @@ import SideBar from './SideBar/SideBar';
 import Message from './Message/Message';
 import './App.scss';
 
-function App() {
+export function App() {
   return (
     <div className="app">
       <div className="app__body">
