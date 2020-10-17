@@ -1,18 +1,28 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './MessageList.scss';
 import UserMessageOther from './UserMessageOther/UserMessageOther';
 import UserMessageMe from './UserMessageMe/UserMessageMe';
+import { selectedMessageSelector } from '../../selectors/selectedMessageSelector';
 const MessageList = () => {
+    const { selectedMessage } = useSelector(state => selectedMessageSelector(state));
+    const messages  = selectedMessage ? selectedMessage.messages : [];
+    const imageUrl  = selectedMessage ? selectedMessage.imageUrl : '';
     return (
         <div className='messageList'>
-            <UserMessageOther
-            imageURL={'https://scontent.frgn7-2.fna.fbcdn.net/v/t1.0-9/93880125_1087094841655328_3172679190365339648_n.jpg?_nc_cat=103&_nc_sid=09cbfe&_nc_eui2=AeEFffZF4f6TlQYnOJzBWDmg7ewotmYZ3nXt7Ci2Zhneda5JNAUfyg6KwZXSFGjefdLbC6HRDjRgNBwHRjal0XCY&_nc_ohc=UafJ_4rmhWgAX98pVB8&_nc_ht=scontent.frgn7-2.fna&oh=81fb0e4c41af9847ed2a45cce2bf5d5a&oe=5FA8D74C'}
-            user="Ei"
-            time="9:06 AM"
-            message="Hey, How are you?"
-            />
+            {
+                messages.map(({ user, message, time }, index) => (
+                    <UserMessageOther
+                    imageURL={imageUrl}
+                    user={user}
+                    time={time}
+                    message={message}
+                    key={index}
+                    />
+                ))
+            }
             <UserMessageMe
-            time="9:06 AM"
+            time="10:06 AM"
             message="Hey, I am fine."
             />
         </div>

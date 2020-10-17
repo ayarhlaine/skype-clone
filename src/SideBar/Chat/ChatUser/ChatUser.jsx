@@ -1,12 +1,25 @@
 import React from 'react';
 import ProfileAvatar from '../../Profile/ProfileAvatar/ProfileAvatar';
+import { connect, useSelector } from 'react-redux';
+import { setSelectedMessageAction } from '../../../features/selectedMessageSlice';
+import { selectedMessageSelector } from '../../../selectors/selectedMessageSelector';
 import './ChatUser.scss';
+const mapDispatch = { setSelectedMessageAction };
 const ChatUser = ({
-    imageUrl, name, lastMessage, lastActiveTime, active
+    user,
+    setSelectedMessageAction,
 }) => {
-    const className = active ? 'chatUser--active' : '';
+    const { userID, imageUrl, name, messages, lastActiveTime, active } = user;
+    const { selectedMessage } = useSelector(state => selectedMessageSelector(state));
+    const selectedUserID = selectedMessage ? selectedMessage.userID : 0;
+    const className = userID === selectedUserID ? 'chatUser--active' : '';
+    const onClick = () => {
+        setSelectedMessageAction({
+            ...user
+        });
+    }
     return (
-        <div className={`chatUser ${className}`}>
+        <div className={`chatUser ${className}`} onClick={onClick}>
             <ProfileAvatar
             active={active}
             imageUrl={imageUrl}
@@ -16,7 +29,7 @@ const ChatUser = ({
                     {name}
                 </h3>
                 <span className="chatUser__info__lastMessage">
-                    {lastMessage}
+                    {messages[messages.length -1].message}
                 </span>
             </div>
             <div className="chatUser__lastActiveTime">
@@ -25,5 +38,4 @@ const ChatUser = ({
         </div>
     )
 }
-
-export default ChatUser
+export default connect(null, mapDispatch)(ChatUser);

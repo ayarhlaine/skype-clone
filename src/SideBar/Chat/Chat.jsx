@@ -12,14 +12,10 @@ const Chat = () => {
             </h2>
             <div className="chat__list">
                 {
-                    chatMessages.map(({active, imageUrl, name, lastMessage, lastActiveTime}, index) => (
+                    chatMessages.map((user, index) => (
                         <ChatUser
                         key={index}
-                        active={active}
-                        imageUrl={imageUrl}
-                        name={name}
-                        lastMessage={lastMessage}
-                        lastActiveTime={lastActiveTime}
+                        user={user}
                         />
                     ))
                 }
