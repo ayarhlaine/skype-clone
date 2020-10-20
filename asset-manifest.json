@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/skype-clone/static/css/main.452e59e3.chunk.css",
+    "main.js": "/skype-clone/static/js/main.c7f161c9.chunk.js",
+    "main.js.map": "/skype-clone/static/js/main.c7f161c9.chunk.js.map",
+    "runtime-main.js": "/skype-clone/static/js/runtime-main.8ba2b40b.js",
+    "runtime-main.js.map": "/skype-clone/static/js/runtime-main.8ba2b40b.js.map",
+    "static/js/2.9332b9fa.chunk.js": "/skype-clone/static/js/2.9332b9fa.chunk.js",
+    "static/js/2.9332b9fa.chunk.js.map": "/skype-clone/static/js/2.9332b9fa.chunk.js.map",
+    "index.html": "/skype-clone/index.html",
+    "precache-manifest.8674ad258cb47bda48fb3f687e6b9334.js": "/skype-clone/precache-manifest.8674ad258cb47bda48fb3f687e6b9334.js",
+    "service-worker.js": "/skype-clone/service-worker.js",
+    "static/css/main.452e59e3.chunk.css.map": "/skype-clone/static/css/main.452e59e3.chunk.css.map",
+    "static/js/2.9332b9fa.chunk.js.LICENSE.txt": "/skype-clone/static/js/2.9332b9fa.chunk.js.LICENSE.txt",
+    "static/media/MessageInput.scss": "/skype-clone/static/media/Tahoma-Regular.ef272a58.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ba2b40b.js",
+    "static/js/2.9332b9fa.chunk.js",
+    "static/css/main.452e59e3.chunk.css",
+    "static/js/main.c7f161c9.chunk.js"
+  ]
+}
